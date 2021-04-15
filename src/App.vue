@@ -1,19 +1,33 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <div class="navbarTop">
+      <h1 chass="test">MySellingBush</h1>
+      <button>panier</button>
+      <button>profil</button>
+    </div>
+
+    <div>
+      <div style="align-items: center">
+        <h2>Choose a category</h2>
+      </div>
+
+      <div>
+        <ListAllCategory></ListAllCategory>
+
+      </div>
+    </div>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import ListAllCategory from './components/ListAllCategory';
 
 export default {
-  name: 'App',
+  name: "App",
   components: {
-    HelloWorld
-  }
-}
+    ListAllCategory
+  },
+};
 </script>
 
 <style>
@@ -22,7 +36,18 @@ export default {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
+  color: #000;
   margin-top: 60px;
 }
+
+body {
+  background-color: #C3B8AA;
+}
+
+.navbarTop {
+    background-color: #859276;
+
+}
+
+
 </style>
